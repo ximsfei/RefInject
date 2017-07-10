@@ -1,0 +1,19 @@
+group 'com.ximsfei'
+version '0.0.1'
+
+apply plugin: 'java'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+}
+
+ext {
+    publishVersion = '0.0.1'
+    moduleName = 'refinject'
+    descContent = '注解反射注入框架'
+}
+
+apply from: '../publishing_maven.gradle'
