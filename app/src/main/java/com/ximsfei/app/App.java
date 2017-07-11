@@ -6,8 +6,6 @@ package com.ximsfei.app;
 public class App {
     public static void main(String[] args) {
         ActivityThread origin = new ActivityThread();
-        origin.mApplication = "Origin Application";
-        origin.mInstrumentation = "Origin Instrumentation";
         System.out.println(ActivityThread.class);
         System.out.println(origin);
         mirror.com.ximsfei.app.ActivityThread.mApplication.set(origin, "Inject Application");
