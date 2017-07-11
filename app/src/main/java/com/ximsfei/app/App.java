@@ -8,9 +8,11 @@ public class App {
         ActivityThread origin = new ActivityThread();
         origin.mApplication = "Origin Application";
         origin.mInstrumentation = "Origin Instrumentation";
+        System.out.println(ActivityThread.class);
         System.out.println(origin);
         mirror.com.ximsfei.app.ActivityThread.mApplication.set(origin, "Inject Application");
         mirror.com.ximsfei.app.ActivityThread.mInstrumentation.set(origin, "Inject Instrumentation");
+        System.out.println(mirror.com.ximsfei.app.ActivityThread.TYPE);
         System.out.println(origin);
     }
 }
