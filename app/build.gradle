@@ -7,6 +7,6 @@ repositories {
 }
 
 dependencies {
-//    compile 'com.ximsfei:refinject:0.0.1'
-    compile project(':refinject')
+    compile 'com.ximsfei:refinject:0.0.1'
+//    compile project(':refinject')
 }
